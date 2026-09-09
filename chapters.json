@@ -1,0 +1,343 @@
+{
+  "_readme": "本檔是全站唯一事實來源：章節順序、標題、SEO 文案與分部分組。側邊欄、分頁器、sitemap、首頁與各章 <head> 全部由 scripts/build_nav.js 依此生成，請勿手改生成區塊。",
+  "site": {
+    "title": "WoowTech code-server 完整指南",
+    "brand": "code-server 指南",
+    "subtitle": "瀏覽器版 VS Code 完整教學",
+    "baseUrl": "https://code-server-guide.woowtech.io",
+    "repoUrl": "https://github.com/WOOWTECH/Woow_code_server_tutorial_site",
+    "locale": "zh_TW",
+    "description": "WoowTech 台灣繁體中文 code-server 完整指南，22 章涵蓋介面導覽、日常編輯、終端機與 Git、擴充套件、AI 代理整合、認證與對外安全，以及 Home Assistant 附加元件與 Rootless Podman 兩種自架部署。",
+    "ogImage": "assets/og/code-server-guide.png",
+    "license": {
+      "name": "CC BY 4.0",
+      "url": "https://creativecommons.org/licenses/by/4.0/deed.zh-hant",
+      "holder": "WoowTech"
+    },
+    "strings": {
+      "pagerFirstPrev": "← 回目錄",
+      "pagerFirstPrevTitle": "教學章節目錄"
+    },
+    "footerMeta": "本站為 WoowTech 製作的獨立社群教學；版本與引用來源以各章「固定來源」為準。書中所有帳號密碼皆為示範用佔位值，請勿直接沿用。",
+    "footerLinks": [
+      {
+        "label": "Home Assistant 附加元件",
+        "href": "https://github.com/WOOWTECH/Woow_ha_vscode_add_on"
+      },
+      {
+        "label": "Rootless Podman 套件",
+        "href": "https://github.com/WOOWTECH/Woow_podman_code_server_package"
+      },
+      {
+        "label": "本站原始碼",
+        "href": "repo"
+      }
+    ],
+    "ogImageMeta": {
+      "type": "image/png",
+      "width": 1200,
+      "height": 630
+    },
+    "sitemap": {
+      "lastmod": "none"
+    },
+    "chrome": {
+      "hideEmptyAppendices": false,
+      "catalogGroupClass": "spaced",
+      "firstPrevDisabled": false,
+      "manage404": false,
+      "pagerTag": "nav",
+      "pagerAriaLabel": "章節分頁",
+      "skipLink": true,
+      "mainId": "main-content",
+      "ariaCurrent": true,
+      "authoredTables": true
+    },
+    "htmlLang": "zh-Hant-TW"
+  },
+  "hub": {
+    "catalog": "tutorial.html",
+    "navLabel": "資源總覽",
+    "pages": []
+  },
+  "chapters": [
+    {
+      "num": "01",
+      "file": "ch1_what_is_code_server.html",
+      "navLabel": "瀏覽器裡的 VS Code",
+      "title": "瀏覽器裡的 VS Code 是什麼",
+      "pagerTitle": "瀏覽器裡的 VS Code",
+      "card": "為什麼要把編輯器搬進瀏覽器。",
+      "description": "第 1 章說明瀏覽器版 VS Code 的定位與適用情境，以及它跟桌面版在能力與限制上的差別。",
+      "part": "第一部：認識這套東西",
+      "status": "planned"
+    },
+    {
+      "num": "02",
+      "file": "ch2_two_flavours.html",
+      "navLabel": "WoowTech 的兩種吃法",
+      "title": "WoowTech 的兩種吃法：附加元件版與 Podman 代理版",
+      "pagerTitle": "兩種吃法",
+      "card": "同名不同物，先分清楚再往下讀。",
+      "description": "第 2 章釐清 WoowTech 內兩套都叫 code-server 的東西：Home Assistant 附加元件版走 Ingress 認證、版本較舊、裝起來最簡單；Podman 套件版較新且預接 AI 代理。",
+      "part": "第一部：認識這套東西",
+      "status": "planned"
+    },
+    {
+      "num": "03",
+      "file": "ch3_ui_tour.html",
+      "navLabel": "介面導覽",
+      "title": "五分鐘介面導覽：工作區長什麼樣",
+      "pagerTitle": "介面導覽",
+      "card": "先認得每個面板，後面才好講。",
+      "description": "第 3 章導覽編輯器的檔案總管、編輯區、面板區與狀態列，說明各自的作用與快捷鍵入口。",
+      "part": "第一部：認識這套東西",
+      "status": "planned"
+    },
+    {
+      "num": "04",
+      "file": "ch4_where_files_live.html",
+      "navLabel": "檔案放在哪裡",
+      "title": "檔案放在哪裡：工作目錄與持久化",
+      "pagerTitle": "檔案放在哪裡",
+      "card": "搞錯這個，重開容器就沒了。",
+      "description": "第 4 章說明工作目錄的位置、哪些路徑會持久保存、哪些是容器內暫存，以及重啟與升級時的資料存續。",
+      "part": "第一部：認識這套東西",
+      "status": "planned"
+    },
+    {
+      "num": "05",
+      "file": "ch5_editing.html",
+      "navLabel": "開檔與編輯",
+      "title": "開檔、編輯、搜尋與多游標",
+      "pagerTitle": "開檔與編輯",
+      "card": "把最常用的操作先練熟。",
+      "description": "第 5 章涵蓋檔案開啟、跨檔搜尋取代、多游標編輯與命令面板等日常編輯操作。",
+      "part": "第二部：每天怎麼用",
+      "status": "planned"
+    },
+    {
+      "num": "06",
+      "file": "ch6_terminal.html",
+      "navLabel": "內建終端機",
+      "title": "內建終端機怎麼用",
+      "pagerTitle": "內建終端機",
+      "card": "編輯器裡就有一個完整 shell。",
+      "description": "第 6 章說明內建終端機的開啟、分割與設定，以及它執行在什麼環境、能碰到哪些檔案。",
+      "part": "第二部：每天怎麼用",
+      "status": "planned"
+    },
+    {
+      "num": "07",
+      "file": "ch7_git.html",
+      "navLabel": "Git 操作",
+      "title": "Git：commit、push 與身分設定",
+      "pagerTitle": "Git 操作",
+      "card": "版本控制是最常用的功能之一。",
+      "description": "第 7 章說明在編輯器內操作 Git 的方式，包含變更檢視、提交、推送，以及認證與提交身分的設定。",
+      "part": "第二部：每天怎麼用",
+      "status": "planned"
+    },
+    {
+      "num": "08",
+      "file": "ch8_extensions.html",
+      "navLabel": "擴充套件",
+      "title": "裝擴充套件：可以裝什麼、裝不到什麼",
+      "pagerTitle": "擴充套件",
+      "card": "市集不一樣，有些套件裝不到。",
+      "description": "第 8 章說明擴充套件的來源市集、安裝方式，以及部分商業套件無法安裝的原因與替代方案。",
+      "part": "第二部：每天怎麼用",
+      "status": "planned"
+    },
+    {
+      "num": "09",
+      "file": "ch9_settings.html",
+      "navLabel": "設定與偏好",
+      "title": "設定、佈景主題與個人偏好",
+      "pagerTitle": "設定與偏好",
+      "card": "調成你順手的樣子。",
+      "description": "第 9 章說明設定檔的位置與層級、佈景主題與字型調整，以及設定如何在重啟後保留。",
+      "part": "第二部：每天怎麼用",
+      "status": "planned"
+    },
+    {
+      "num": "10",
+      "file": "ch10_why_ai_in_ide.html",
+      "navLabel": "為什麼在 IDE 放代理",
+      "title": "為什麼要在編輯器裡放一個 AI 代理",
+      "pagerTitle": "為什麼在 IDE 放代理",
+      "card": "跟另開聊天視窗差在哪。",
+      "description": "第 10 章說明把 AI 代理放進編輯器的價值：它看得到你的檔案、能直接改、能跑指令，跟另開聊天視窗貼程式碼是不同層次的事。",
+      "part": "第三部：把 AI 接進來",
+      "status": "planned"
+    },
+    {
+      "num": "11",
+      "file": "ch11_acp_panel.html",
+      "navLabel": "代理面板初體驗",
+      "title": "Podman 代理版：代理面板初體驗",
+      "pagerTitle": "代理面板初體驗",
+      "card": "這是 Podman 版才有的功能。",
+      "description": "第 11 章介紹 Podman 套件版內建的代理面板，說明如何開啟、如何確認連線狀態，以及第一次對話的流程。",
+      "part": "第三部：把 AI 接進來",
+      "status": "planned"
+    },
+    {
+      "num": "12",
+      "file": "ch12_wiring.html",
+      "navLabel": "接線原理",
+      "title": "三十秒看懂接線：從擴充套件到代理程序",
+      "pagerTitle": "接線原理",
+      "card": "知道原理，壞了才修得動。",
+      "description": "第 12 章拆解代理面板到底層代理程序之間的呼叫鏈，說明每一層負責什麼、哪一層最常出問題。",
+      "part": "第三部：把 AI 接進來",
+      "status": "planned"
+    },
+    {
+      "num": "13",
+      "file": "ch13_shared_state.html",
+      "navLabel": "共用代理資料",
+      "title": "共用代理資料：跟其他服務看到同一份對話",
+      "pagerTitle": "共用代理資料",
+      "card": "對話不會因為換工具就不見。",
+      "description": "第 13 章說明代理狀態磁碟區的共用機制，以及為什麼在其他 WoowTech 服務開的對話這裡也看得到。",
+      "part": "第三部：把 AI 接進來",
+      "status": "planned"
+    },
+    {
+      "num": "14",
+      "file": "ch14_pi_in_terminal.html",
+      "navLabel": "終端機直接用代理",
+      "title": "在終端機直接呼叫代理",
+      "pagerTitle": "終端機直接用代理",
+      "card": "不透過面板也能用。",
+      "description": "第 14 章說明在內建終端機直接執行代理指令的方式，以及相關環境變數與家目錄的處理。",
+      "part": "第三部：把 AI 接進來",
+      "status": "planned"
+    },
+    {
+      "num": "15",
+      "file": "ch15_auth_models.html",
+      "navLabel": "兩種認證模型",
+      "title": "兩種版本的認證模型差在哪",
+      "pagerTitle": "兩種認證模型",
+      "card": "誰能進來，兩邊規則完全不同。",
+      "description": "第 15 章比較附加元件版與 Podman 版的認證方式：前者沿用 Home Assistant 登入，後者是獨立密碼。",
+      "part": "第四部：安全與對外",
+      "status": "planned"
+    },
+    {
+      "num": "16",
+      "file": "ch16_default_risks.html",
+      "navLabel": "誠實面對預設值",
+      "title": "誠實面對預設值：明文連線與共用密碼",
+      "pagerTitle": "誠實面對預設值",
+      "card": "預設能跑，不代表能對外。",
+      "description": "第 16 章逐項檢視預設設定的風險——未加密連線、共用密碼、掛載進來的敏感目錄——並說明各自的影響範圍。",
+      "part": "第四部：安全與對外",
+      "status": "planned"
+    },
+    {
+      "num": "17",
+      "file": "ch17_blank_panel.html",
+      "navLabel": "面板空白的原因",
+      "title": "為什麼代理面板是空白的：憑證那道牆",
+      "pagerTitle": "面板空白的原因",
+      "card": "這不是壞掉，是瀏覽器的安全限制。",
+      "description": "第 17 章說明在未加密連線下部分功能無法載入的原因，涉及瀏覽器對安全來源的要求，以及正確的解法方向。",
+      "part": "第四部：安全與對外",
+      "status": "planned"
+    },
+    {
+      "num": "18",
+      "file": "ch18_reverse_proxy.html",
+      "navLabel": "正確的對外做法",
+      "title": "正確的對外做法：反向代理與受信任憑證",
+      "pagerTitle": "正確的對外做法",
+      "card": "要對外，就把憑證做對。",
+      "description": "第 18 章說明以反向代理搭配受信任憑證對外發佈的做法，並比較幾種常見的前端方案。",
+      "part": "第四部：安全與對外",
+      "status": "planned"
+    },
+    {
+      "num": "19",
+      "file": "ch19_choose_deployment.html",
+      "navLabel": "兩種部署怎麼選",
+      "title": "兩種部署怎麼選：決策表",
+      "pagerTitle": "兩種部署怎麼選",
+      "card": "先想清楚你要的是簡單還是完整。",
+      "description": "第 19 章用決策表比較附加元件版與 Podman 套件版的安裝門檻、版本新舊、認證模型與 AI 代理能力。",
+      "part": "第五部：自己架一台",
+      "status": "planned"
+    },
+    {
+      "num": "20",
+      "file": "ch20_ha_addon.html",
+      "navLabel": "附加元件版安裝",
+      "title": "部署方式一：Home Assistant 附加元件",
+      "pagerTitle": "附加元件版安裝",
+      "card": "三個步驟就能用。",
+      "description": "第 20 章說明附加元件版的安裝流程、設定選項與側邊欄進入方式。",
+      "part": "第五部：自己架一台",
+      "status": "planned"
+    },
+    {
+      "num": "21",
+      "file": "ch21_podman.html",
+      "navLabel": "Podman 版安裝",
+      "title": "部署方式二：Rootless Podman 套件",
+      "pagerTitle": "Podman 版安裝",
+      "card": "要 AI 代理就走這條。",
+      "description": "第 21 章說明 Podman 套件版的前置需求、安裝腳本做了哪些事，以及安裝後的驗證步驟。",
+      "part": "第五部：自己架一台",
+      "status": "planned"
+    },
+    {
+      "num": "22",
+      "file": "ch22_upgrade_backup.html",
+      "navLabel": "升級、備份與排錯",
+      "title": "升級、備份與疑難排解",
+      "pagerTitle": "升級、備份與排錯",
+      "card": "長期使用一定會遇到的事。",
+      "description": "第 22 章說明版本升級的流程與連動關係、真正需要備份的資料，以及常見故障的判讀方式。",
+      "part": "第五部：自己架一台",
+      "status": "planned"
+    }
+  ],
+  "appendices": [
+    {
+      "num": "A",
+      "file": "appendix_install_quickstart.html",
+      "navLabel": "附錄 A · 安裝速查",
+      "title": "附錄 A：各種部署的安裝速查表",
+      "pagerTitle": "安裝速查",
+      "card": "把安裝路線壓縮成可以照著打的指令清單。",
+      "description": "附錄 A 以速查表形式列出各種部署方式的前置需求、關鍵指令與驗證方法，供已讀過正文的讀者快速取用。"
+    },
+    {
+      "num": "B",
+      "file": "appendix_troubleshooting.html",
+      "navLabel": "附錄 B · 疑難排解全集",
+      "title": "附錄 B：疑難排解全集",
+      "pagerTitle": "疑難排解全集",
+      "card": "把散在各章的故障徵狀收攏成一張對照表。",
+      "description": "附錄 B 依徵狀分類彙整常見故障與處置方式，涵蓋安裝、連線、認證、功能異常與升級後的相容性問題。"
+    },
+    {
+      "num": "C",
+      "file": "appendix_glossary.html",
+      "navLabel": "附錄 C · 名詞對照表",
+      "title": "附錄 C：中英名詞對照表",
+      "pagerTitle": "名詞對照表",
+      "card": "中英對照，查詞用。",
+      "description": "附錄 C 收錄全書技術名詞的中英對照與一句話定義，方便讀者在閱讀英文原始文件時對照。"
+    }
+  ],
+  "i18n": {
+    "hreflang": [
+      "zh-Hant",
+      "zh"
+    ],
+    "xDefault": "en"
+  }
+}

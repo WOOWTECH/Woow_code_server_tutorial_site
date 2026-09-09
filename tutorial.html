@@ -1,0 +1,204 @@
+<!doctype html><html lang="zh-Hant-TW"><head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WoowTech code-server 完整指南 · 瀏覽器版 VS Code 完整教學</title>
+  <meta name="description" content="WoowTech 台灣繁體中文 code-server 完整指南，22 章涵蓋介面導覽、日常編輯、終端機與 Git、擴充套件、AI 代理整合、認證與對外安全，以及 Home Assistant 附加元件與 Rootless Podman 兩種自架部署。" />
+  <meta name="author" content="WoowTech" />
+  <link rel="canonical" href="https://code-server-guide.woowtech.io/tutorial.html" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://code-server-guide.woowtech.io/tutorial.html" />
+  <link rel="alternate" hreflang="zh" href="https://code-server-guide.woowtech.io/tutorial.html" />
+  <link rel="alternate" hreflang="en" href="https://code-server-guide.woowtech.io/en/tutorial.html" />
+  <link rel="alternate" hreflang="x-default" href="https://code-server-guide.woowtech.io/en/tutorial.html" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="WoowTech code-server 完整指南" />
+  <meta property="og:locale" content="zh_TW" />
+  <meta property="og:title" content="WoowTech code-server 完整指南 · 瀏覽器版 VS Code 完整教學" />
+  <meta property="og:description" content="WoowTech 台灣繁體中文 code-server 完整指南，22 章涵蓋介面導覽、日常編輯、終端機與 Git、擴充套件、AI 代理整合、認證與對外安全，以及 Home Assistant 附加元件與 Rootless Podman 兩種自架部署。" />
+  <meta property="og:url" content="https://code-server-guide.woowtech.io/tutorial.html" />
+  <meta property="og:image" content="https://code-server-guide.woowtech.io/assets/og/code-server-guide.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="WoowTech code-server 完整指南 · 瀏覽器版 VS Code 完整教學" />
+  <meta name="twitter:description" content="WoowTech 台灣繁體中文 code-server 完整指南，22 章涵蓋介面導覽、日常編輯、終端機與 Git、擴充套件、AI 代理整合、認證與對外安全，以及 Home Assistant 附加元件與 Rootless Podman 兩種自架部署。" />
+  <meta name="twitter:image" content="https://code-server-guide.woowtech.io/assets/og/code-server-guide.png" />
+  <meta name="theme-color" content="#6183FC" />
+  <link rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.zh-hant" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;600;700&family=Yellowtail&display=swap" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/i18n.css" />
+</head><body><main class="home"><header class="hero">
+      <!-- i18n:switch -->
+      <nav class="lang-switch" aria-label="語言"><a class="active" href="tutorial.html" lang="zh-Hant" aria-current="page">中文</a><a href="en/tutorial.html" lang="en" hreflang="en">EN</a></nav>
+      <!-- /i18n:switch --><span class="kicker-script">WoowTech</span><div class="kicker">Node-RED Guide</div><h1>22 章 Node-RED 完整教學</h1><p>全 22 章均已依固定版本來源完成正文、操作範例與技術驗證，涵蓋安全入門、Home Assistant 實戰、外部整合與維運。</p></header><section class="chapter-index">
+      <h2 class="index-title">第一部：認識這套東西</h2>
+      <div class="chapter-grid">
+        <a class="chapter-card" href="ch1_what_is_code_server.html">
+          <span class="num">01</span>
+          <h3>瀏覽器裡的 VS Code 是什麼</h3>
+          <p>為什麼要把編輯器搬進瀏覽器。</p>
+        </a>
+        <a class="chapter-card" href="ch2_two_flavours.html">
+          <span class="num">02</span>
+          <h3>WoowTech 的兩種吃法：附加元件版與 Podman 代理版</h3>
+          <p>同名不同物，先分清楚再往下讀。</p>
+        </a>
+        <a class="chapter-card" href="ch3_ui_tour.html">
+          <span class="num">03</span>
+          <h3>五分鐘介面導覽：工作區長什麼樣</h3>
+          <p>先認得每個面板，後面才好講。</p>
+        </a>
+        <a class="chapter-card" href="ch4_where_files_live.html">
+          <span class="num">04</span>
+          <h3>檔案放在哪裡：工作目錄與持久化</h3>
+          <p>搞錯這個，重開容器就沒了。</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="chapter-index spaced">
+      <h2 class="index-title">第二部：每天怎麼用</h2>
+      <div class="chapter-grid">
+        <a class="chapter-card" href="ch5_editing.html">
+          <span class="num">05</span>
+          <h3>開檔、編輯、搜尋與多游標</h3>
+          <p>把最常用的操作先練熟。</p>
+        </a>
+        <a class="chapter-card" href="ch6_terminal.html">
+          <span class="num">06</span>
+          <h3>內建終端機怎麼用</h3>
+          <p>編輯器裡就有一個完整 shell。</p>
+        </a>
+        <a class="chapter-card" href="ch7_git.html">
+          <span class="num">07</span>
+          <h3>Git：commit、push 與身分設定</h3>
+          <p>版本控制是最常用的功能之一。</p>
+        </a>
+        <a class="chapter-card" href="ch8_extensions.html">
+          <span class="num">08</span>
+          <h3>裝擴充套件：可以裝什麼、裝不到什麼</h3>
+          <p>市集不一樣，有些套件裝不到。</p>
+        </a>
+        <a class="chapter-card" href="ch9_settings.html">
+          <span class="num">09</span>
+          <h3>設定、佈景主題與個人偏好</h3>
+          <p>調成你順手的樣子。</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="chapter-index spaced">
+      <h2 class="index-title">第三部：把 AI 接進來</h2>
+      <div class="chapter-grid">
+        <a class="chapter-card" href="ch10_why_ai_in_ide.html">
+          <span class="num">10</span>
+          <h3>為什麼要在編輯器裡放一個 AI 代理</h3>
+          <p>跟另開聊天視窗差在哪。</p>
+        </a>
+        <a class="chapter-card" href="ch11_acp_panel.html">
+          <span class="num">11</span>
+          <h3>Podman 代理版：代理面板初體驗</h3>
+          <p>這是 Podman 版才有的功能。</p>
+        </a>
+        <a class="chapter-card" href="ch12_wiring.html">
+          <span class="num">12</span>
+          <h3>三十秒看懂接線：從擴充套件到代理程序</h3>
+          <p>知道原理，壞了才修得動。</p>
+        </a>
+        <a class="chapter-card" href="ch13_shared_state.html">
+          <span class="num">13</span>
+          <h3>共用代理資料：跟其他服務看到同一份對話</h3>
+          <p>對話不會因為換工具就不見。</p>
+        </a>
+        <a class="chapter-card" href="ch14_pi_in_terminal.html">
+          <span class="num">14</span>
+          <h3>在終端機直接呼叫代理</h3>
+          <p>不透過面板也能用。</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="chapter-index spaced">
+      <h2 class="index-title">第四部：安全與對外</h2>
+      <div class="chapter-grid">
+        <a class="chapter-card" href="ch15_auth_models.html">
+          <span class="num">15</span>
+          <h3>兩種版本的認證模型差在哪</h3>
+          <p>誰能進來，兩邊規則完全不同。</p>
+        </a>
+        <a class="chapter-card" href="ch16_default_risks.html">
+          <span class="num">16</span>
+          <h3>誠實面對預設值：明文連線與共用密碼</h3>
+          <p>預設能跑，不代表能對外。</p>
+        </a>
+        <a class="chapter-card" href="ch17_blank_panel.html">
+          <span class="num">17</span>
+          <h3>為什麼代理面板是空白的：憑證那道牆</h3>
+          <p>這不是壞掉，是瀏覽器的安全限制。</p>
+        </a>
+        <a class="chapter-card" href="ch18_reverse_proxy.html">
+          <span class="num">18</span>
+          <h3>正確的對外做法：反向代理與受信任憑證</h3>
+          <p>要對外，就把憑證做對。</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="chapter-index spaced">
+      <h2 class="index-title">第五部：自己架一台</h2>
+      <div class="chapter-grid">
+        <a class="chapter-card" href="ch19_choose_deployment.html">
+          <span class="num">19</span>
+          <h3>兩種部署怎麼選：決策表</h3>
+          <p>先想清楚你要的是簡單還是完整。</p>
+        </a>
+        <a class="chapter-card" href="ch20_ha_addon.html">
+          <span class="num">20</span>
+          <h3>部署方式一：Home Assistant 附加元件</h3>
+          <p>三個步驟就能用。</p>
+        </a>
+        <a class="chapter-card" href="ch21_podman.html">
+          <span class="num">21</span>
+          <h3>部署方式二：Rootless Podman 套件</h3>
+          <p>要 AI 代理就走這條。</p>
+        </a>
+        <a class="chapter-card" href="ch22_upgrade_backup.html">
+          <span class="num">22</span>
+          <h3>升級、備份與疑難排解</h3>
+          <p>長期使用一定會遇到的事。</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="chapter-index spaced">
+      <h2 class="index-title">附錄</h2>
+      <div class="chapter-grid">
+        <a class="chapter-card" href="appendix_install_quickstart.html">
+          <span class="num">A</span>
+          <h3>附錄 A：各種部署的安裝速查表</h3>
+          <p>把安裝路線壓縮成可以照著打的指令清單。</p>
+        </a>
+        <a class="chapter-card" href="appendix_troubleshooting.html">
+          <span class="num">B</span>
+          <h3>附錄 B：疑難排解全集</h3>
+          <p>把散在各章的故障徵狀收攏成一張對照表。</p>
+        </a>
+        <a class="chapter-card" href="appendix_glossary.html">
+          <span class="num">C</span>
+          <h3>附錄 C：中英名詞對照表</h3>
+          <p>中英對照，查詞用。</p>
+        </a>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <p>《WoowTech code-server 完整指南》由 <a href="https://github.com/WOOWTECH/Woow_code_server_tutorial_site" rel="noopener">WoowTech</a> 製作，以 <a rel="license noopener" href="https://creativecommons.org/licenses/by/4.0/deed.zh-hant">CC BY 4.0</a> 授權釋出 — 可自由分享與改作，請保留出處。</p>
+      <div class="link-row"><a href="https://github.com/WOOWTECH/Woow_ha_vscode_add_on" rel="noopener">Home Assistant 附加元件</a><a href="https://github.com/WOOWTECH/Woow_podman_code_server_package" rel="noopener">Rootless Podman 套件</a><a href="https://github.com/WOOWTECH/Woow_code_server_tutorial_site" rel="noopener">本站原始碼</a></div>
+      <p class="footer-meta">本站為 WoowTech 製作的獨立社群教學；版本與引用來源以各章「固定來源」為準。書中所有帳號密碼皆為示範用佔位值，請勿直接沿用。 · <a href="https://github.com/WOOWTECH/Woow_code_server_tutorial_site" rel="noopener">原始碼與勘誤</a></p>
+    </footer>
+  </main></body></html>

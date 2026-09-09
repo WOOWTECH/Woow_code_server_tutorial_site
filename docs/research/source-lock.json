@@ -1,0 +1,71 @@
+{
+  "schema": "woowtech-source-lock",
+  "schemaVersion": "1.0.0",
+  "retrievalDate": "2026-09-09",
+  "productionBaseline": {
+    "_note": "版本基準以 Home Assistant 附加元件為準；Podman 套件版的 code-server 版本明顯較新，差異在各章明列。",
+    "haAddOn": "7.0.0",
+    "versionDriftKnown": true
+  },
+  "sources": [
+    {
+      "id": "woow-ha-vscode-add-on",
+      "product": "WoowTech Home Assistant Studio Code Server 附加元件",
+      "layer": "add-on",
+      "version": "7.0.0",
+      "commit": "43aa7715a2ac212c3f9409284286af1cee43063e",
+      "url": "https://github.com/WOOWTECH/Woow_ha_vscode_add_on",
+      "exactCommitUrl": "https://github.com/WOOWTECH/Woow_ha_vscode_add_on/tree/43aa7715a2ac212c3f9409284286af1cee43063e",
+      "authorityTier": 1,
+      "allowedChapterNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ]
+    },
+    {
+      "id": "woow-podman-code-server-package",
+      "product": "WoowTech code-server Rootless Podman 套件",
+      "layer": "podman",
+      "commit": "2df94fc85b1e4d837711d8e6ae4884ec38363547",
+      "url": "https://github.com/WOOWTECH/Woow_podman_code_server_package",
+      "exactCommitUrl": "https://github.com/WOOWTECH/Woow_podman_code_server_package/tree/2df94fc85b1e4d837711d8e6ae4884ec38363547",
+      "authorityTier": 1,
+      "allowedChapterNumbers": [
+        2,
+        4,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        21,
+        22
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "schema": "woowtech-code-server-content-rules",
+  "forbiddenTerms": [
+    {
+      "pattern": "\\bNode-RED\\b|node-red-guide|Woow_node_red",
+      "flags": "i",
+      "label": "禁止殘留模板來源產品詞彙"
+    },
+    {
+      "pattern": "\\bEMQX\\b|emqx-guide",
+      "flags": "i",
+      "label": "禁止其他站產品詞彙"
+    }
+  ],
+  "locale": "en",
+  "forbidPoliteYou": false
+}
