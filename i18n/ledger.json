@@ -2,18 +2,20 @@
  "_readme": "Translation ledger. Key = <locale>:<file>#<unit> or <locale>:chapters.json:<path>. status: pending | complete | stale | manual | localized | excluded | failed. sourceHash = hash of the zh unit; targetHash = hash of the translated unit. Maintained by scripts/check_i18n.js — do not hand-edit hashes.",
  "units": {
   "en:index.html#main": {
-   "status": "complete",
-   "sourceHash": "d548703a67d41609",
+   "status": "stale",
+   "sourceHash": "a584b8443a8faa2c",
    "targetHash": "56da038172676f9d",
    "registeredAt": "2026-09-03",
-   "translatedAt": "2026-09-05"
+   "translatedAt": "2026-09-05",
+   "zhChangedAt": "2026-09-09"
   },
   "en:tutorial.html#main": {
-   "status": "complete",
-   "sourceHash": "6f08f2cc3137daa5",
+   "status": "stale",
+   "sourceHash": "db196be22f43b0fd",
    "targetHash": "718398de775270de",
    "registeredAt": "2026-09-03",
-   "translatedAt": "2026-09-05"
+   "translatedAt": "2026-09-05",
+   "zhChangedAt": "2026-09-09"
   },
   "en:ch1_overview.html#header": {
    "status": "complete",
@@ -1738,39 +1740,44 @@
    "translatedAt": "2026-09-05"
   },
   "en:chapters.json:site.title": {
-   "status": "complete",
-   "sourceHash": "0d128858bc78ebd3",
+   "status": "stale",
+   "sourceHash": "939492ed6f34e834",
    "targetHash": "aafc07485269de86",
    "registeredAt": "2026-09-03",
-   "translatedAt": "2026-09-05"
+   "translatedAt": "2026-09-05",
+   "zhChangedAt": "2026-09-09"
   },
   "en:chapters.json:site.brand": {
-   "status": "complete",
-   "sourceHash": "81644299acfb448f",
+   "status": "stale",
+   "sourceHash": "26d99bcc35347236",
    "targetHash": "c96eb81ed0d9cac0",
    "registeredAt": "2026-09-03",
-   "translatedAt": "2026-09-05"
+   "translatedAt": "2026-09-05",
+   "zhChangedAt": "2026-09-09"
   },
   "en:chapters.json:site.subtitle": {
-   "status": "complete",
-   "sourceHash": "66ef7b81efc02549",
+   "status": "stale",
+   "sourceHash": "07f977136096f23c",
    "targetHash": "dbf33b1c0be4f032",
    "registeredAt": "2026-09-03",
-   "translatedAt": "2026-09-05"
+   "translatedAt": "2026-09-05",
+   "zhChangedAt": "2026-09-09"
   },
   "en:chapters.json:site.description": {
-   "status": "complete",
-   "sourceHash": "4c91dbbb0cb304dc",
+   "status": "stale",
+   "sourceHash": "6b420300915869f2",
    "targetHash": "f7c9bbc5a81d9b11",
    "registeredAt": "2026-09-03",
-   "translatedAt": "2026-09-05"
+   "translatedAt": "2026-09-05",
+   "zhChangedAt": "2026-09-09"
   },
   "en:chapters.json:site.footerMeta": {
-   "status": "complete",
-   "sourceHash": "f87439db277c28f9",
+   "status": "stale",
+   "sourceHash": "29ff98d0f7799b17",
    "targetHash": "926f87f0894b60e9",
    "registeredAt": "2026-09-03",
-   "translatedAt": "2026-09-05"
+   "translatedAt": "2026-09-05",
+   "zhChangedAt": "2026-09-09"
   },
   "en:chapters.json:hub.navLabel": {
    "status": "complete",
@@ -1794,25 +1801,28 @@
    "translatedAt": "2026-09-05"
   },
   "en:chapters.json:site.footerLinks.0.label": {
-   "status": "complete",
-   "sourceHash": "5344052f01d1abc5",
+   "status": "stale",
+   "sourceHash": "9743a3914953ee93",
    "targetHash": "5344052f01d1abc5",
    "registeredAt": "2026-09-03",
-   "translatedAt": "2026-09-05"
+   "translatedAt": "2026-09-05",
+   "zhChangedAt": "2026-09-09"
   },
   "en:chapters.json:site.footerLinks.1.label": {
-   "status": "complete",
-   "sourceHash": "cde30a28cd8eb347",
+   "status": "stale",
+   "sourceHash": "cc9b8e48cee38b39",
    "targetHash": "3fc27058d3be2ab6",
    "registeredAt": "2026-09-03",
-   "translatedAt": "2026-09-05"
+   "translatedAt": "2026-09-05",
+   "zhChangedAt": "2026-09-09"
   },
   "en:chapters.json:site.footerLinks.2.label": {
-   "status": "complete",
-   "sourceHash": "c2d400bf750a2386",
+   "status": "stale",
+   "sourceHash": "d6672104bb51e832",
    "targetHash": "a601b4c1936755a2",
    "registeredAt": "2026-09-03",
-   "translatedAt": "2026-09-05"
+   "translatedAt": "2026-09-05",
+   "zhChangedAt": "2026-09-09"
   },
   "en:chapters.json:site.footerLinks.3.label": {
    "status": "complete",
